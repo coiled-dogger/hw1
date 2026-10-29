@@ -10,26 +10,38 @@ body {
 header {
     background-color: #d9eaf7;
     padding: 20px;
-    img {
-        display: block;
-        margin: 0 auto;
-        width: 200px;
-        height: auto;
-    }
 }
+
+header img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+}
+
+/* Visited links */
 a:visited {
-    color: #88ff009e;
+    color: #663399;
 }
 
 /* 3. Style the navigation */
 nav {
+    display: inline-block;
+    width: 80%;
     background-color: #333333;
     padding: 15px;
+    box-sizing: border-box;
+}
+
+nav img {
+    width: 10%;
+    position: relative;
+    top: 20px;
 }
 
 /* 4. Style the main content */
 main {
-    background-color: #f4f4f4d9;
+    background-color: #f4f4f4;
     font-size: 18px;
     padding: 20px;
 }
@@ -40,11 +52,13 @@ footer {
     padding: 15px;
 }
 
-/* 6. Style list items */
+/* 6. Original li styling commented out as requested */
+/*
 li {
     display: inline-block;
     width: 150px;
 }
+*/
 
 /* 7. Style the main heading */
 h1 {
@@ -56,4 +70,43 @@ h1 {
 /* 8. Style paragraphs */
 p {
     line-height: 1.6;
+}
+
+/* 9. Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
+    align-items: start;
+    row-gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+}
+
+/* 10. Flex layout */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+/* Skip link: visible when focused for keyboard users */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #ffffff;
+    color: #000000;
+    padding: 8px 12px;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
 }
