@@ -41,7 +41,7 @@ nav img {
 
 /* 4. Style the main content */
 main {
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     font-size: 18px;
     padding: 20px;
 }
@@ -109,4 +109,3 @@ p {
     top: 10px;
 }
 
-}
