@@ -41,7 +41,7 @@ nav img {
 
 /* 4. Style the main content */
 main {
-    /* background-color: #f4f4f4; */
+    background-color: #f4f4f4;
     font-size: 18px;
     padding: 20px;
 }
@@ -99,11 +99,15 @@ p {
     position: absolute;
     top: -40px;
     left: 10px;
-    background: #ffffff;
     color: #000000;
-    padding: 8px 12px;
+    padding: 15px 15px;
     z-index: 1000;
 }
+
+.skip-link {
+    top: 10px;
+}
+
 
 .skip-link:focus {
     top: 10px;
